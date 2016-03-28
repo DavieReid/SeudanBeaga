@@ -24,6 +24,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeudanBeaga.DAL", "SeudanBe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeudanBeaga.Services", "SeudanBeaga.Services\SeudanBeaga.Services.csproj", "{AD09C374-85A7-4020-9E6E-47E8E4827845}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeudanBeaga.API", "SeudanBeaga.API\SeudanBeaga.API.csproj", "{0C5466E2-25E0-4DE9-9D72-18BAF38D6192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeudanBeaga.API.Tests", "SeudanBeaga.API.Tests\SeudanBeaga.API.Tests.csproj", "{1F1696A7-CC4B-4D02-9BBD-4985E2C149BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +50,14 @@ Global
 		{AD09C374-85A7-4020-9E6E-47E8E4827845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD09C374-85A7-4020-9E6E-47E8E4827845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD09C374-85A7-4020-9E6E-47E8E4827845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C5466E2-25E0-4DE9-9D72-18BAF38D6192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5466E2-25E0-4DE9-9D72-18BAF38D6192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5466E2-25E0-4DE9-9D72-18BAF38D6192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5466E2-25E0-4DE9-9D72-18BAF38D6192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F1696A7-CC4B-4D02-9BBD-4985E2C149BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1696A7-CC4B-4D02-9BBD-4985E2C149BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F1696A7-CC4B-4D02-9BBD-4985E2C149BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F1696A7-CC4B-4D02-9BBD-4985E2C149BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
