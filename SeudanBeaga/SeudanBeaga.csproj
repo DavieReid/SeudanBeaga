@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.js" />
+    <Content Include="App\Main\main.html" />
     <Content Include="App\Main\mainController.js" />
     <Content Include="App\Main\main_datacontext.js" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -189,6 +190,8 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\Contact\" />
+    <Folder Include="App\Gallery\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
