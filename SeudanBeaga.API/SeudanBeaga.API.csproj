@@ -128,6 +128,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ContactsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,7 +145,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SeudanBeaga.DAL\SeudanBeaga.DAL.csproj">
+      <Project>{d043292b-e9a7-4b6c-8fc8-ae23612af9e2}</Project>
+      <Name>SeudanBeaga.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeudanBeaga.Services\SeudanBeaga.Services.csproj">
+      <Project>{ad09c374-85a7-4020-9e6e-47e8e4827845}</Project>
+      <Name>SeudanBeaga.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
