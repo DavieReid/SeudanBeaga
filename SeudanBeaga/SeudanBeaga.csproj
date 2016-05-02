@@ -132,6 +132,8 @@
     <Content Include="App\Common\content.html" />
     <Content Include="App\Contact\contact.html" />
     <Content Include="App\Faq\faq.html" />
+    <Content Include="App\Faq\faqController.js" />
+    <Content Include="App\Faq\faq_datacontext.js" />
     <Content Include="App\Gallery\gallery.html" />
     <Content Include="App\Main\main.html" />
     <Content Include="App\Main\mainController.js" />

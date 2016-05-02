@@ -8,7 +8,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 
-namespace SeudanBeaga.API
+namespace SeudanBeaga.API.Controllers
 {
     public class ContactsController:ApiController
     {
@@ -21,7 +21,7 @@ namespace SeudanBeaga.API
         }
 
         [HttpGet]
-        public IEnumerable<Contact> Get()
+        public IEnumerable<Contact> GetAll()
         {
             return _service.GetAllContacts();
         }

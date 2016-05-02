@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeudanBeaga.DAL.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SeudanBeaga.DAL.Model
 {
-    public class Faq : BaseObject
+    public class Faq : BaseObject, IEntity
     {
         [Required]
         [MaxLength(1000)]
