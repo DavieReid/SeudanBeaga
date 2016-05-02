@@ -13,6 +13,7 @@ namespace SeudanBeaga.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Contact>().ToTable("Contacts");
+            modelBuilder.Entity<Faq>().ToTable("Faq");
         }
     }
 }
