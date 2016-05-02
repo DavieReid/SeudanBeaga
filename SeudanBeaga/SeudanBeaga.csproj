@@ -126,10 +126,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\About\about.html" />
     <Content Include="App\app.js" />
     <Content Include="App\app.routing.js" />
     <Content Include="App\Common\content.html" />
     <Content Include="App\Contact\contact.html" />
+    <Content Include="App\Faq\faq.html" />
     <Content Include="App\Gallery\gallery.html" />
     <Content Include="App\Main\main.html" />
     <Content Include="App\Main\mainController.js" />

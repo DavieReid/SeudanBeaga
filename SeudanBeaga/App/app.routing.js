@@ -11,9 +11,17 @@
             url: "/index",
             templateUrl: "../App/Main/main.html"
         })
+        .state('about', {
+            url: "/about",
+            templateUrl: "App/About/about.html",
+        })
         .state('gallery', {
             url: "/gallery",
             templateUrl: "App/Gallery/gallery.html",
+        })
+        .state('faq', {
+            url: "/faq",
+            templateUrl: "App/Faq/faq.html",
         })
         .state('contact', {
             url: "/contact",
