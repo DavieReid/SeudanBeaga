@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\About\about.html" />
+    <Content Include="App\app.config.js" />
     <Content Include="App\app.js" />
     <Content Include="App\app.routing.js" />
     <Content Include="App\Common\content.html" />

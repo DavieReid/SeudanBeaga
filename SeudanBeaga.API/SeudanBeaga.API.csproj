@@ -156,7 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\SeudanBeaga - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\SeudanBeaga - Web Deploy.pubxml" />
   </ItemGroup>
