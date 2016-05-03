@@ -15,6 +15,10 @@
             url: "/about",
             templateUrl: "App/About/about.html",
         })
+        .state('prices', {
+            url: "/prices",
+            templateUrl: "App/Prices/prices.html",
+        })
         .state('gallery', {
             url: "/gallery",
             templateUrl: "App/Gallery/gallery.html",
