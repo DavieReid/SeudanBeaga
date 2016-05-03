@@ -8,16 +8,13 @@
     function faqController(faq_datacontext) {
 
         var vm = this;
-        vm.faq = null;
-
-        //main
-        vm.getFaq();
+        vm.faqs = null;
 
         vm.getFaq = getFaq;
 
         function getFaq() {
             faq_datacontext.getFaq().then(function (response) {
-                vm.faq = response.data;
+                vm.faqs = response.data;
             });
         }
     }

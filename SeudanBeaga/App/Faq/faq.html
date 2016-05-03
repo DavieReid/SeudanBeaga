@@ -1,3 +1,10 @@
-﻿<div class="jumbotron" data-ng-controller="faqController as vm">
+﻿<div class="jumbotron" data-ng-controller="faqController as vm" data-ng-init="vm.getFaq()">
     <h1>Frequently Asked Questions</h1>
+    <ul>
+        <li data-ng-repeat-start="faq in vm.faqs | orderBy:'order' track by faq.id">
+            Q. {{faq.question}}
+        </li>
+        <li data-ng-repeat-end>A. {{faq.answer}}</li>
+
+    </ul>
 </div>

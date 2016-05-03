@@ -18,6 +18,9 @@ namespace SeudanBeaga
                 "~/Scripts/angular-ui/ui-bootstrap-tpls.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/sbApp")
+                 .Include("~/App/app.js")
+                 .Include("~/App/app.config.js")
+                 .Include("~/App/app.routing.js")
                 .IncludeDirectory("~/App","*.js", true));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
