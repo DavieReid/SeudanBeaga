@@ -67,6 +67,7 @@
     <Compile Include="Model\BaseObject.cs" />
     <Compile Include="Model\Contact.cs" />
     <Compile Include="Model\Faq.cs" />
+    <Compile Include="Model\Holiday.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeudanBeagaContext.cs" />
     <Compile Include="SeudanBeagaRepository.cs" />
