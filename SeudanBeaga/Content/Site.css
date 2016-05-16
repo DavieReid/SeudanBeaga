@@ -133,3 +133,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 .priceCardTitle, .priceCardCost {
     text-align: center;
 }
+
+.map {
+  height: 300px;
+}
+/* 
+Fixes Bootstrap issues with Google Maps
+see http://stackoverflow.com/a/9170756 
+*/
+.map img { 
+  max-width: none;
+}

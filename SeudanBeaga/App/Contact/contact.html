@@ -1,3 +1,19 @@
-﻿<div class="jumbotron">
-    <h1>Contact</h1>
+﻿<div data-ng-controller="contactController as vm" data-ng-init="vm.getContacts()">
+    <div class="jumbotron">
+        <h1>Contact</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4" data-ng-repeat="contact in vm.contacts">
+            <p>{{contact.Name}}</p>
+            <p>{{contact.houseNum}} {{contact.street}}, {{contact.city}}</p>
+            <p>{{contact.postCode}}</p>
+            <p><a href="tel:{{contact.phone}}">{{contact.phone}}</a></p>
+            <p><a href="mailto:{{contact.email}}">{{contact.email}}</a></p>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <gm-map gm-map-id="'contactMap'" gm-center="center"
+                        gm-zoom="zoom" gm-map-options="vm.mapOptions.map" class="map"></div>
+        </div>
+    </div>
 </div>

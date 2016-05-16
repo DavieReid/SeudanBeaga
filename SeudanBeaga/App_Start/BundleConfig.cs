@@ -15,7 +15,8 @@ namespace SeudanBeaga
                 .Include("~/Scripts/angular.js",
                 "~/Scripts/angular-animate.js",
                 "~/Scripts/angular-ui-router.js",
-                "~/Scripts/angular-ui/ui-bootstrap-tpls.js"));
+                "~/Scripts/angular-ui/ui-bootstrap-tpls.js",
+                "~/Scripts/angular-gm/angular-gm.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/sbApp")
                  .Include("~/App/app.js")
