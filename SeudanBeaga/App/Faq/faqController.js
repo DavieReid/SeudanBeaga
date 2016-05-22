@@ -13,9 +13,11 @@
         vm.getFaq = getFaq;
 
         function getFaq() {
-            faq_datacontext.getFaq().then(function (response) {
-                vm.faqs = response.data;
-            });
+            if (vm.faqs === null) {
+                faq_datacontext.getFaq().then(function (response) {
+                    vm.faqs = response.data;
+                });
+            }             
         }
     }
 })();

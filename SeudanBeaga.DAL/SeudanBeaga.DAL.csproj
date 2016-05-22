@@ -63,6 +63,10 @@
     <Compile Include="Migrations\201605021637032_faq.Designer.cs">
       <DependentUpon>201605021637032_faq.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605221125323_Holidays.cs" />
+    <Compile Include="Migrations\201605221125323_Holidays.Designer.cs">
+      <DependentUpon>201605221125323_Holidays.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\BaseObject.cs" />
     <Compile Include="Model\Contact.cs" />
@@ -85,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605021637032_faq.resx">
       <DependentUpon>201605021637032_faq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605221125323_Holidays.resx">
+      <DependentUpon>201605221125323_Holidays.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

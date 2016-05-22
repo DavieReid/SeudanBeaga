@@ -14,6 +14,7 @@ namespace SeudanBeaga.DAL
         {
             modelBuilder.Entity<Contact>().ToTable("Contacts");
             modelBuilder.Entity<Faq>().ToTable("Faq");
+            modelBuilder.Entity<Holiday>().ToTable("Holidays");
         }
     }
 }
