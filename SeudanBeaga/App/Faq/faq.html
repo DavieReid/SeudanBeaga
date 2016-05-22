@@ -1,12 +1,18 @@
 ﻿<div data-ng-controller="faqController as vm" data-ng-init="vm.getFaq()">
     <div class="jumbotron">
         <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="faq-section">
         <ul>
-            <li data-ng-repeat-start="faq in vm.faqs | orderBy:'order' track by faq.id">
-                Q. {{faq.question}}
+            <li class="faq-question"
+                ng-class="{sbBlue : $index === 1 || $index === 5,
+                            sbRed : $index === 0 || $index === 4,
+                            sbYellow: $index === 2,
+                            sbGreen: $index%3 ===0}"
+                data-ng-repeat-start="faq in vm.faqs | orderBy:'order' track by faq.id">
+                <span class="faq-start">Q. </span>{{faq.question}}
             </li>
-            <li data-ng-repeat-end>A. {{faq.answer}}</li>
-
+            <li class="faq-answer" data-ng-repeat-end> <span class="faq-start">A. </span>{{faq.answer}}</li>
         </ul>
     </div>
 </div>

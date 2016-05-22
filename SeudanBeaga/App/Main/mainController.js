@@ -13,6 +13,10 @@
 
         vm.getHolidays = getHolidays;
 
+        function activate()
+        {
+            vm.getHolidays();
+        }
 
         function getHolidays() {
             if (vm.holidays === null) {
@@ -22,7 +26,8 @@
             }
         }
 
-
+        //main
+        activate();
 
        
     }

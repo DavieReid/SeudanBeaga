@@ -4,13 +4,15 @@
     </div>
     <div class="row">
         <div class="col-md-4" data-ng-repeat="contact in vm.contacts">
-            <p>{{contact.Name}}</p>
+            <h2>Contact {{contact.name}}</h2>
             <p>{{contact.houseNum}} {{contact.street}}, {{contact.city}}</p>
             <p>{{contact.postCode}}</p>
+            <h3>Call us:</h3>
             <p><a href="tel:{{contact.phone}}">{{contact.phone}}</a></p>
+            <h3>Email us:</h3>
             <p><a href="mailto:{{contact.email}}">{{contact.email}}</a></p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <div>
                 <ng-map default-style="true"
                         class="map"

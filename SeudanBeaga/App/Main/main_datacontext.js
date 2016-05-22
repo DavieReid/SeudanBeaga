@@ -3,9 +3,9 @@
 
     var serviceId = "main_datacontext";
     angular.module("sbApp")
-        .factory(serviceId, ["$http", main_datacontext]);
+        .factory(serviceId, ["$http","_apiUrl", main_datacontext]);
 
-    function main_datacontext($http) {
+    function main_datacontext($http, _apiUrl) {
 
         var factory = {
             getHolidays: getHolidays
@@ -16,7 +16,7 @@
 
         function getHolidays()
         {
-            var url = _apiUrl + 'Holidays/Get';
+            var url = _apiUrl + 'Holidays/GetActive';
             return $http.get(url);
         }
     }

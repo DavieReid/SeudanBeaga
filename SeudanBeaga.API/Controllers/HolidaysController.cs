@@ -9,7 +9,7 @@ using System.Web.Http;
 
 namespace SeudanBeaga.API.Controllers
 {
-    public class HolidaysController
+    public class HolidaysController : ApiController
     {
 
         HolidaysService _service;

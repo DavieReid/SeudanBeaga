@@ -52,8 +52,8 @@
             <p>We are open 50 weeks of the year from 8am until 6pm.  We close at 1pm on Christmas Eve and re-open after the New Year holiday.</p>
             <p>We close on 4 public holidays as below:</p>
             <ul>
-                <li data-ng-repeat-start="holiday in vm.holidays |  track by holiday.id">
-                    {{holiday.Date | date:'fullDate'}}
+                <li data-ng-repeat="holiday in vm.holidays track by holiday.id">
+                    {{holiday.date | date:'fullDate'}}
                 </li>
             </ul>
         </div>

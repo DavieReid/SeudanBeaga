@@ -12,6 +12,7 @@
 
         vm.getFaq = getFaq;
 
+
         function getFaq() {
             if (vm.faqs === null) {
                 faq_datacontext.getFaq().then(function (response) {

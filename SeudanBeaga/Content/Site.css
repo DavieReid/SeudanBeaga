@@ -1,9 +1,32 @@
-﻿ @font-face { font-family: Kids; src: url('../fonts/5yearsoldfont.ttf'); } 
- @font-face { font-family: Kids; font-weight: bold; src: url('../fonts/5yearsoldfont.ttf');}
-html, body {height: 100%;}
-img {border: 0;}
+﻿@font-face {
+    font-family: Kids;
+    src: url('../fonts/5yearsoldfont.ttf');
+}
+
+@font-face {
+    font-family: Kids;
+    font-weight: bold;
+    src: url('../fonts/5yearsoldfont.ttf');
+}
+
+html, body {
+    height: 100%;
+}
+
+img {
+    border: 0;
+}
 /* Basic Styles */
-body { font-size:14px; color:#000000; line-height:14px; font-family:Kids; background:#ffffff; padding:0; margin:0;letter-spacing: -0.19px;}
+body {
+    font-size: 14px;
+    color: #000000;
+    line-height: 14px;
+    font-family: Kids;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -0.19px;
+}
 
 
 body {
@@ -126,16 +149,12 @@ textarea {
     padding: 10px;
     margin: 1em 1em 0 0;
     height: 10em;
-   
-
-
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0f3fa+0,d8f0fc+50,b8e2f6+51,b6dffd+100;Shape+2+Style */
-background: rgb(224,243,250); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(184,226,246,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
-
+    background: rgb(224,243,250); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(184,226,246,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
 }
 
 .priceCardTitle, .priceCardCost {
@@ -143,12 +162,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', end
 }
 
 .map {
-  height: 300px;
+    height: 300px;
+    width: 100%;
 }
-/* 
+    /* 
 Fixes Bootstrap issues with Google Maps
 see http://stackoverflow.com/a/9170756 
 */
-.map img { 
-  max-width: none;
+    .map img {
+        max-width: none;
+    }
+
+/*
+    faq
+*/
+
+.faq-section > ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.faq-start {
+    font-size: 2em;
+}
+
+.faq-question, .faq-answer{
+    margin:1em;
+}
+
+.sbGreen{
+    color:#1E8D4A;
+}
+
+.sbBlue{
+    color:#53C2DD;
+}
+
+.sbRed{
+    color:#E71412;
+}
+
+.sbYellow{
+    color:#F7D140;
 }
