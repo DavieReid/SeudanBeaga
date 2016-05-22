@@ -180,6 +180,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-animate.min.js.map" />
+    <Content Include="fonts\5yearsoldfont.ttf" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
