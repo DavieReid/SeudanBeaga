@@ -9,7 +9,8 @@
         <ul>
             <li class="faq-question"
                 ng-class="{sbBlue : $index === 1 || $index === 5,
-                            sbRed : $index === 0 || $index === 4,
+                            sbRed : $index === 0,
+                            sbPurple: $index === 4,
                             sbYellow: $index === 2,
                             sbGreen: $index%3 ===0}"
                 data-ng-repeat-start="faq in vm.faqs | orderBy:'order' track by faq.id">
