@@ -1,7 +1,7 @@
 ﻿<div data-ng-controller="faqController as vm" data-ng-init="vm.getFaq()">
     <div class="jumbotron jumbotronGreen">
         <h1>Frequently Asked Questions</h1>
-        <p class="lead">If you have another question then please <a ui-sref="contact">
+        <p class="lead">If you have any other questions then please <a ui-sref="contact">
     <strong>get in touch</strong>
 </a>.</p>
     </div>
@@ -12,7 +12,7 @@
                             sbRed : $index === 0,
                             sbPurple: $index === 4,
                             sbYellow: $index === 2,
-                            sbGreen: $index%3 ===0}"
+                            sbGreen: $index === 3}"
                 data-ng-repeat-start="faq in vm.faqs | orderBy:'order' track by faq.id">
                 <span class="faq-start">Q. </span>{{faq.question}}
             </li>
