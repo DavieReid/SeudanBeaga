@@ -4,6 +4,6 @@
         'ui.router',                                // Routing
         'ui.bootstrap',                             // Ui Bootstrap
         'ngAnimate',                                // Animations
-        'AngularGM'                                 // Google Maps
+        'ngMap'                                     // Google Maps
     ]);
 })();

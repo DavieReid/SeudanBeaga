@@ -154,8 +154,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
-    <Content Include="Scripts\angular-gm\angular-gm.js" />
-    <Content Include="Scripts\angular-gm\angular-gm.min.js" />
+    <Content Include="Scripts\angular-gm\ng-map.js" />
+    <Content Include="Scripts\angular-gm\ng-map.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-ui-router.js" />
     <Content Include="Scripts\angular-ui-router.min.js" />

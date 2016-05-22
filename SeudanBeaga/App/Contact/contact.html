@@ -12,8 +12,14 @@
         </div>
         <div class="col-md-6">
             <div>
-                <gm-map gm-map-id="'contactMap'" gm-center="center"
-                        gm-zoom="zoom" gm-map-options="vm.mapOptions.map" class="map"></div>
+                <ng-map default-style="true"
+                        class="map"
+                        center="[{{vm.lat}}, {{vm.lng}}]"
+                        map-type-id="{{vm.mapTypeId}}"
+                        zoom="{{vm.zoom}}">
+                    <marker position="[{{vm.lat}}, {{vm.lng}}]" />
+                </ng-map>
+                    </div>
         </div>
     </div>
 </div>
