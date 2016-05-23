@@ -3,16 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using FlickrNet;
+using SeudanBeaga.Services;
+using System.Web.Http;
+using SeudanBeaga.DAL.Model;
+using System.Threading.Tasks;
 
 namespace SeudanBeaga.API.Controllers
 {
-    public class GalleryController
+    public class GalleryController : ApiController
     {
-        //https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
-        string flickrKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-        string sharedSecret = "xxxxxxxxxxxxxxx";
-        string photosetId = "xxxxxxxx";
+        GalleryService _service;
 
+        public GalleryController()
+        {
+            _service = new GalleryService();
+        }
 
+        [HttpGet]
+        [ActionName("Get")]
+        public PhotosetPhotoCollection Get()
+        {
+            return _service.GetPhotoSet();
+        }
     }
 }
