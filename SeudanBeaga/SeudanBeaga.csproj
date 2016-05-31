@@ -138,6 +138,8 @@
     <Content Include="App\Faq\faqController.js" />
     <Content Include="App\Faq\faq_datacontext.js" />
     <Content Include="App\Gallery\gallery.html" />
+    <Content Include="App\Gallery\galleryController.js" />
+    <Content Include="App\Gallery\gallery_datacontext.js" />
     <Content Include="App\Main\main.html" />
     <Content Include="App\Main\mainController.js" />
     <Content Include="App\Main\main_datacontext.js" />
@@ -146,6 +148,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\clock.jpg" />
     <Content Include="Content\Images\seudan beaga.jpg" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="favicon.ico" />

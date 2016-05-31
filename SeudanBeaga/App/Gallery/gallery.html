@@ -1,6 +1,11 @@
-﻿<div class="jumbotron jumbotronPurple">
-    <h1>Gallery</h1>
-</div>
-<div>
-    
+﻿<div data-ng-controller="galleryController as vm" data-ng-init="vm.getPhotos()">
+    <div class="jumbotron jumbotronPurple">
+        <h1>Gallery</h1>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row">
+        <div class="col-md-4" data-ng-repeat="photo in vm.photos track by photo.photoId">
+            <img class="featurette-image img-responsive" ng-src="{{photo.mediumUrl}}" alt="{{photo.title}}">
+        </div>       
+    </div>
 </div>
