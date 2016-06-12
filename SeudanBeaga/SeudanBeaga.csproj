@@ -143,7 +143,7 @@
     <Content Include="App\Main\main.html" />
     <Content Include="App\Main\mainController.js" />
     <Content Include="App\Main\main_datacontext.js" />
-    <Content Include="App\Gallery\Prices\prices.html" />
+    <Content Include="App\Prices\prices.html" />
     <Content Include="Content\blueimp-gallery-indicator.css" />
     <Content Include="Content\blueimp-gallery.css" />
     <Content Include="Content\blueimp-gallery.min.css" />
