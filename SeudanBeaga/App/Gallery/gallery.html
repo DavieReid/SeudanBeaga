@@ -5,11 +5,36 @@
     </div>
     <hr class="featurette-divider">
 
-    <div class="row" id="links">
-        <div class="col-sm-3" data-ng-repeat="photo in vm.photos track by photo.photoId">
-            <a href="{{photo.mediumUrl}}" title="{{photo.title}}" data-gallery>
-                <img class="img-responsive thumb" ng-src="{{photo.mediumUrl}}" alt="{{photo.title}}">
-            </a>
+    <div ng-if="vm.photos === null" class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+    <div class="container marketing">
+        <div class="row pager-area">
+            <select placeholder="Photos per page" data-ng-model="vm.itemsPerPage">
+                <option value="5">5 per page</option>
+                <option value="10">10 per page</option>
+                <option value="20">20 per page</option>
+                <option value="30">30 per page</option>
+                <option value="40">40 per page</option>
+                <option value="50">50 per page</option>
+            </select>
+            <dir-pagination-controls boundary-links="true" auto-hide="true" template-url="/Scripts/angular-pagination/dirPagination.tpl.html" auto-hide="false"></dir-pagination-controls>          
+        </div>
+        <div class="row" id="links">
+            <div class="col-lg-2 col-md-3 col-sm-5 thumbContainer"
+                 dir-paginate="photo in vm.photos | itemsPerPage: vm.itemsPerPage track by photo.photoId">
+                <a href="{{photo.mediumUrl}}" title="{{photo.title}}" data-gallery>
+                    <img class="img-responsive thumb" ng-src="{{photo.mediumUrl}}" alt="{{photo.title}}">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -28,7 +53,7 @@
         <div class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header jumbotronPurple">
                         <button type="button" class="close" aria-hidden="true">&times;</button>
                         <h4 class="modal-title"></h4>
                     </div>
@@ -46,6 +71,6 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
 </div>
 

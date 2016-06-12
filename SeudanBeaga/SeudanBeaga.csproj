@@ -143,7 +143,7 @@
     <Content Include="App\Main\main.html" />
     <Content Include="App\Main\mainController.js" />
     <Content Include="App\Main\main_datacontext.js" />
-    <Content Include="App\Prices\prices.html" />
+    <Content Include="App\Gallery\Prices\prices.html" />
     <Content Include="Content\blueimp-gallery-indicator.css" />
     <Content Include="Content\blueimp-gallery.css" />
     <Content Include="Content\blueimp-gallery.min.css" />
@@ -172,6 +172,8 @@
     <Content Include="Scripts\angular-gm\ng-map.js" />
     <Content Include="Scripts\angular-gm\ng-map.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-pagination\dirPagination.js" />
+    <Content Include="Scripts\angular-pagination\dirPagination.tpl.html" />
     <Content Include="Scripts\angular-ui-router.js" />
     <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />

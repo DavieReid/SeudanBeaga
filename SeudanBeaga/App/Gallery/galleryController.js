@@ -9,6 +9,7 @@
 
         var vm = this;
         vm.photos = null;
+        vm.itemsPerPage = 20;
 
         vm.getPhotos = getPhotos;
 
