@@ -259,3 +259,11 @@ see http://stackoverflow.com/a/9170756
 .clockImage {
     height: 15em;
 }
+
+.thumb {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    max-height: 12em;
+}
+
+

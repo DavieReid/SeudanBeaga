@@ -1,11 +1,51 @@
 ﻿<div data-ng-controller="galleryController as vm" data-ng-init="vm.getPhotos()">
     <div class="jumbotron jumbotronPurple">
         <h1>Gallery</h1>
+        <p class="lead">A closer look at our warm and welcoming environment...</p>
     </div>
     <hr class="featurette-divider">
-    <div class="row">
-        <div class="col-md-4" data-ng-repeat="photo in vm.photos track by photo.photoId">
-            <img class="featurette-image img-responsive" ng-src="{{photo.mediumUrl}}" alt="{{photo.title}}">
-        </div>       
+
+    <div class="row" id="links">
+        <div class="col-sm-3" data-ng-repeat="photo in vm.photos track by photo.photoId">
+            <a href="{{photo.mediumUrl}}" title="{{photo.title}}" data-gallery>
+                <img class="img-responsive thumb" ng-src="{{photo.mediumUrl}}" alt="{{photo.title}}">
+            </a>
+        </div>
     </div>
+
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
 </div>
+

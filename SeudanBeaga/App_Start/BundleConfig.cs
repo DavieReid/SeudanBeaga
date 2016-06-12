@@ -9,7 +9,9 @@ namespace SeudanBeaga
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                         "~/Scripts/blueimp-gallery.js",
+                        "~/Scripts/jquery.blueimp-gallery.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular")
                 .Include("~/Scripts/angular.js",
@@ -31,11 +33,15 @@ namespace SeudanBeaga
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap-image-gallery.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/bootstrap-theme.css",
+                      "~/Content/blueimp-gallery.css",
+                      "~/Content/bootstrap-image-gallery.css",
+                      "~/Content/bootstrap-gallery-indicator.css",
                       "~/Content/site.css"));
         }
     }
