@@ -144,6 +144,7 @@ textarea {
 
 .contactNav {
     margin-top: 0.8em;
+    font-size: 1.4em
 }
 
 .priceCard {
@@ -374,4 +375,9 @@ dir-pagination-controls {
 
 .pagination>li>a{
     height: 31px;
+}
+
+.img-nav-logo{
+    margin-top:0.5em;
+    max-width:8em;
 }
