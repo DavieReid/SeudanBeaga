@@ -261,17 +261,17 @@ see http://stackoverflow.com/a/9170756
 }
 
 .thumb {
-    max-height: 7em;
+    max-height: 14em;
     padding: 0;
     border:1px solid #021a40;
 }
 
 div.thumbContainer {
-    width: 10em;
+    width: 20em;
     margin: 0.2em;
     border: 1px solid #CBB8DA;
     padding: 0.5em;
-    max-height: 8em;
+    max-height: 16em;
 }
 
 div.thumbContainer:hover {
@@ -344,10 +344,34 @@ div.thumbContainer:hover {
   } 
 }
 
+
+dir-pagination-controls {
+    float:left;
+}
+
 .pager-area select{
     padding-top: 3px;
     padding-bottom: 3px;
     height:31px;
     width: 120px;
     border-color: #DDDDDD;
+}
+
+.pagination .range div{
+    padding:0;
+}
+
+.pagination {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.pagination .text-item div
+{
+    margin-top: 5px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.pagination>li>a{
+    height: 31px;
 }

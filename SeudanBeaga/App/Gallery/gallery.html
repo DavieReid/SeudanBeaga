@@ -18,15 +18,15 @@
     </div>
     <div class="container marketing">
         <div class="row pager-area">
-            <select placeholder="Photos per page" data-ng-model="vm.itemsPerPage">
-                <option value="5">5 per page</option>
-                <option value="10">10 per page</option>
-                <option value="20">20 per page</option>
-                <option value="30">30 per page</option>
-                <option value="40">40 per page</option>
-                <option value="50">50 per page</option>
-            </select>
-            <dir-pagination-controls boundary-links="true" auto-hide="true" template-url="/Scripts/angular-pagination/dirPagination.tpl.html" auto-hide="false"></dir-pagination-controls>          
+            <dir-pagination-controls boundary-links="true" auto-hide="false" template-url="/Scripts/angular-pagination/dirPagination.tpl.html"></dir-pagination-controls>
+                <select placeholder="Photos per page" data-ng-model="vm.itemsPerPage">
+                    <option value="5">5 per page</option>
+                    <option value="10">10 per page</option>
+                    <option value="20">20 per page</option>
+                    <option value="30">30 per page</option>
+                    <option value="40">40 per page</option>
+                    <option value="50">50 per page</option>
+                </select>
         </div>
         <div class="row" id="links">
             <div class="col-lg-2 col-md-3 col-sm-5 thumbContainer"
