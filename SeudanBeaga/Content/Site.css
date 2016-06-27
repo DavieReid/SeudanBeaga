@@ -18,7 +18,7 @@ img {
 }
 /* Basic Styles */
 body {
-    font-size: 14px;
+    font-size: 18px;
     color: #000000;
     line-height: 14px;
     font-family: Kids;
@@ -138,13 +138,18 @@ textarea {
         color: #59e8ee;
         background-color: #2b64c0;
     }
+
+    .contactNav {
+        margin-top: 0.6em;
+        font-size: 1em;
+    }
 }
 
 /*END NAV BAR*/
 
 .contactNav {
     margin-top: 0.8em;
-    font-size: 1.4em
+    font-size: 1.2em;
 }
 
 .priceCard {
@@ -264,7 +269,7 @@ see http://stackoverflow.com/a/9170756
 .thumb {
     max-height: 14em;
     padding: 0;
-    border:1px solid #021a40;
+    border: 1px solid #021a40;
 }
 
 div.thumbContainer {
@@ -275,109 +280,131 @@ div.thumbContainer {
     max-height: 16em;
 }
 
-div.thumbContainer:hover {
-	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-	box-shadow: 0 0 5px rgba(0,0,0,0.5);
-	}
+    div.thumbContainer:hover {
+        -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
 
 
 /*spinner*/
 .sk-cube-grid {
-  width: 70px;
-  height: 70px;
-  margin: 100px auto;
+    width: 70px;
+    height: 70px;
+    margin: 100px auto;
 }
 
-.sk-cube-grid .sk-cube {
-  width: 33%;
-  height: 33%;
-  background-color: #662D91;
-  float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
-}
-.sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-.sk-cube-grid .sk-cube2 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-.sk-cube-grid .sk-cube3 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-.sk-cube-grid .sk-cube4 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
-.sk-cube-grid .sk-cube5 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-.sk-cube-grid .sk-cube6 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-.sk-cube-grid .sk-cube7 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s; }
-.sk-cube-grid .sk-cube8 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
-.sk-cube-grid .sk-cube9 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+    .sk-cube-grid .sk-cube {
+        width: 33%;
+        height: 33%;
+        background-color: #662D91;
+        float: left;
+        -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+        animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    }
+
+    .sk-cube-grid .sk-cube1 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube2 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube3 {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+
+    .sk-cube-grid .sk-cube4 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube5 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube6 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube7 {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    .sk-cube-grid .sk-cube8 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube9 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
-    -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1); 
-  }
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
 }
 
 @keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
-    -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1);
-  } 
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
 }
 
 
 dir-pagination-controls {
-    float:left;
+    float: left;
 }
 
-.pager-area select{
+.pager-area select {
     padding-top: 3px;
     padding-bottom: 3px;
-    height:31px;
+    height: 31px;
     width: 120px;
     border-color: #DDDDDD;
 }
 
-.pagination .range div{
-    padding:0;
+.pagination .range div {
+    padding: 0;
 }
 
 .pagination {
-    margin-top:0px;
-    margin-bottom:0px;
-}
-.pagination .text-item div
-{
-    margin-top: 5px;
-    padding-left: 10px;
-    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.pagination>li>a{
-    height: 31px;
-}
+    .pagination .text-item div {
+        margin-top: 5px;
+        padding-left: 10px;
+        display: inline-block;
+    }
 
-.img-nav-logo{
-    margin-top:0.5em;
-    max-width:8em;
+    .pagination > li > a {
+        height: 31px;
+    }
+
+.img-nav-logo {
+    margin-top: 0.5em;
+    max-width: 8em;
 }

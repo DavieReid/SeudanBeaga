@@ -13,9 +13,9 @@ namespace SeudanBeaga.Services
 {
     public class GalleryService
     {
-        string apiKey = "d66627f08ee8361457195d0e9225b8a0";
-        string photoAlbumId = "72157668776452865";
-        string userId = "143444427@N06";
+        const string apiKey = "0c3b0b4e72b30fc8c7230afbc553d3c2";
+        const string photoAlbumId = "72157670213759936";
+        const string userId = "144509354@N02";
         Flickr _flickr;
 
         public GalleryService()
@@ -26,8 +26,8 @@ namespace SeudanBeaga.Services
 
         public PhotosetPhotoCollection GetPhotoSet()
         {
-            return _flickr.PhotosetsGetPhotos(photoAlbumId, 
-                PhotoSearchExtras.All, 
+            return _flickr.PhotosetsGetPhotos(photoAlbumId,
+                PhotoSearchExtras.All,
                 PrivacyFilter.PublicPhotos);
         }
     }
