@@ -168,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\File Local.pubxml" />
     <None Include="Properties\PublishProfiles\SeudanBeaga - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\SeudanBeaga - Web Deploy.pubxml" />
   </ItemGroup>
